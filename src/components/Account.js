@@ -9,6 +9,7 @@ export default function Account() {
   const { user, ownedPunks } = useAuth();
   const [listItems, setListItems] = useState([])
   const [ isLoading, setIsLoading ] = useState(false)
+  const [ isDoading, setDsLoading ] = useState(false)
 
   useEffect(() => {
     let isConnected = true;
